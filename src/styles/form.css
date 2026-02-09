@@ -1,0 +1,32 @@
+.form-container {
+  width: 320px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-container label {
+  font-weight: bold;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.form-container button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 8px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}

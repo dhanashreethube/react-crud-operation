@@ -1,0 +1,24 @@
+{
+  "name": "react_curd_operation",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "json-server": "^1.0.0-beta.5",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-hook-form": "^7.71.1",
+    "react-router-dom": "^6.30.3",
+    "zod": "^4.3.6"
+  }
+}
