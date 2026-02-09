@@ -10,6 +10,7 @@ const UserTable = ({ users, onDelete }) => {
         <tr>
           <th>#</th>
           <th>Name</th>
+          
           <th>Email</th>
           <th colSpan="2">Actions</th>
         </tr>
@@ -20,7 +21,10 @@ const UserTable = ({ users, onDelete }) => {
           <tr key={u.id}>
             <td>{index + 1}</td>
             <td>{u.firstName} {u.lastName}</td>
+            
             <td>{u.email}</td>
+
+            
 
             <td>
               <button
