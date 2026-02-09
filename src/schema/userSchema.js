@@ -1,4 +1,9 @@
-import { z } from "zod";
+ //import { z } from "zod";
+//import * as z from "zod";
+
+import * as z from "zod";
+
+
 
 export const userSchema = z.object({
   firstName: z.string().min(1, "First name is required"),
