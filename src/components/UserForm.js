@@ -12,8 +12,8 @@ const UserForm = ({ initialValues, onSubmit, isEdit }) => {
   const {
     register,
     handleSubmit,
-    reset,
-  } = useForm({
+    reset,formState: { errors }
+  } = useForm({resolver: zodResolver(userSchema),
     defaultValues: {
       firstName: "",
       lastName: "",
@@ -41,6 +41,8 @@ const UserForm = ({ initialValues, onSubmit, isEdit }) => {
             {...register(field.name)}
             required={field.required}
           />
+          {errors[field.name] && (<p style={{ color: "red", fontSize: "12px" }}>{errors[field.name].message}</p>)}
+        
         </div>
       ))}
 
